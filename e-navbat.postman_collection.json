@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "da33ef05-a981-41d1-8482-c1033755aea3",
+		"name": "e-navbat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44199702"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "createAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"neogan1\",\n    \"password\": \"123\",\n    \"role\": \"superadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllAdmins",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"neogan\",\n    \"password\": \"Dang!dang123\",\n    \"isActive\": false,\n    \"fullName\": \"Vohidjon Oktamov\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/admin/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAdminById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"neogan\",\n    \"password\": \"Dang!dang123\",\n    \"isActive\": false,\n    \"fullName\": \"Vohidjon Oktamov\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/admin/684acde93dc8734bcdb403b5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"684acde93dc8734bcdb403b5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAdmin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"grizzly\",\n    \"password\": \"dang1dang!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/admin/684b428d1776fc5030944874",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"684b428d1776fc5030944874"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAdmin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/admin/684b428d1776fc5030944874",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"684b428d1776fc5030944874"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "doctor",
+			"item": [
+				{
+					"name": "createDoctor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\": \"+998901234568\",\n    \"fullName\": \"John Doe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/doctor/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllDoctors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/doctor/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDoctorById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/doctor/684d062fdcdd289a52d4d550",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctor",
+								"684d062fdcdd289a52d4d550"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDoctor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\": \"+998901234566\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/doctor/684d062fdcdd289a52d4d550",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctor",
+								"684d062fdcdd289a52d4d550"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDoctor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/doctor/684d062fdcdd289a52d4d550",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"doctor",
+								"684d062fdcdd289a52d4d550"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "graph",
+			"item": [
+				{
+					"name": "createGraph",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"schedule\": \"2025-06-14T11:42Z\",\n    \"status\": \"busy\",\n    \"doctorId\": \"684d07150eb8ec24b3c3e145\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/graph/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"graph",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGraphs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/graph/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"graph",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getGraphById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/graph/684d1b42c3c2e73ba06ba185",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"graph",
+								"684d1b42c3c2e73ba06ba185"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateGraph",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"schedule\": \"2025-06-14T11:00Z\",\n    \"status\": \"free\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/graph/684d1b67c3c2e73ba06ba18b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"graph",
+								"684d1b67c3c2e73ba06ba18b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteGraph",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/graph/684d1b67c3c2e73ba06ba18b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"graph",
+								"684d1b67c3c2e73ba06ba18b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
